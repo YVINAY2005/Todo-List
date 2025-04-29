@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+  
+  .todo-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    color: #fff;
+  }
+  
+  .todo-container h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #000;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 110px);
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+  }
+  
+  button {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-left: 10px;
+    
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #todoList {
+    list-style: none;
+    margin-top: 1rem;
+    padding: 0;
+  }
+  
+  #todoList li {
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .delete-btn {
+    background: transparent;
+    color: #e63946;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    color: #a4161a;
+  }
+  
+  @media (max-width: 600px) {
+    input[type="text"] {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+  
+    button {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  
